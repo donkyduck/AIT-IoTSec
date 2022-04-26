@@ -1,0 +1,46 @@
+{
+"additionalProperties": false,
+"properties": {
+"c1": {
+"operation": {
+"store": {
+"ttl": "7d"
+},
+"transform": {
+"expression": "$.c1"
+}
+},
+"type": "number"
+},
+"c2": {
+"operation": {
+"store": {
+"ttl": "7d"
+}
+},
+"type": "number"
+},
+"multiplication": {
+"operation": {
+"store": {
+"ttl": "7d"
+},
+"transform": {
+"expression": "$.c1*$.c2"
+}
+},
+"type": "number"
+},
+"additive": {
+"operation": {
+"store": {
+"ttl": "7d"
+},
+"transform": {
+"expression": "$.c1+$.c2"
+}
+},
+"type": "number"
+}
+}
+}
