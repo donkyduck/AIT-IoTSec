@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "m1": {
+      "operation": {
+        "store": {
+          "ttl": "7d"
+        },
+        "transform": {
+          "expression": "$.m1"
+        }
+      },
+      "type": "number"
+    },
+    "m2": {
+      "operation": {
+        "store": {
+          "ttl": "7d"
+        },
+        "transform": {
+          "expression": "$.m2"
+        }
+      },
+      "type": "number"
+    },
+    "m3": {
+      "operation": {
+        "store": {
+          "ttl": "7d"
+        },
+        "transform": {
+          "expression": "$.m3"
+        }
+      },
+      "type": "number"
+    },
+    "avg": {
+      "operation": {
+        "store": {
+          "ttl": "7d"
+        },
+        "transform": {
+          "expression": "($.m1+$.m2+$.m3)/3"
+        }
+      },
+      "type": "number"
+    }
+  }
+}
