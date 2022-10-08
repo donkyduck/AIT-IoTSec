@@ -1,1 +1,1 @@
-This directory collects neccessary materials for a NETPIE tutorial. 
+This directory collects necessary materials for a NETPIE tutorial. 
